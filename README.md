@@ -2,6 +2,8 @@
 
 Welcome to the jQueryShowcase! This repository is a collection of projects built using jQuery, demonstrating various interactive and dynamic functionalities for web development. Each folder contains a unique project, covering all the aspects of it and showcasing how jQuery can enhance user experiences and improve interface responsiveness.
 
+Resource: [https://www.w3schools.com/jquery/](https://www.w3schools.com/jquery/)
+
 ## Installation & Setup
 
 To run any of the projects, follow these steps:
