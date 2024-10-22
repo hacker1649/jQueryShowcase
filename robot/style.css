@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.task2 {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bigDiv {
+  width: 400px;
+  height: 400px;
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+#smallButton {
+  width: 10%;
+  height: 10%;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.obstacle {
+  width: 20%;
+  height: 2%;
+  background-color: grey;
+  position: absolute;
+}
+
+.obstacle1 { left: 50%; top: 20%; }
+.obstacle2 { left: 75%; top: 80%; }
+.obstacle3 { left: 20%; top: 50%; }
+.obstacle4 { left: 5%; top: 30%; }
+.obstacle5 { left: 40%; top: 90%; }
+.obstacle6 { left: 38%; top: 68%;}
+
+#message {
+  display: none;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 20px;
+}

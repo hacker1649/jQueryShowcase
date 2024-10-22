@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section id="alert">
+      <div class="container mt-5">
+        <!-- Alert -->
+        <div id="alert-container"></div>
+      </div>
+    </section>
+
+    <section id="form">
+      <div class="container mt-5 shadow">
+        <h2>Submit Form Data and Display in Table</h2>
+  
+        <!-- Form -->
+        <form id="dataForm">
+          <div class="mb-3">
+            <label for="firstName" class="form-label fw-bold">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label fw-bold">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label fw-bold">Age</label>
+            <input
+              type="number"
+              class="form-control"
+              id="age"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label fw-bold">Website URL</label>
+            <input
+              type="url"
+              class="form-control"
+              id="website"
+              placeholder="Enter website url i.e. https://example.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Gender</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="Male"
+                  required
+                />
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="Female"
+                  required
+                />
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="other1"
+                  value="Other"
+                  required
+                />
+                <label class="form-check-label" for="other1">Other</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Subjects</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="subject"
+                  id="html"
+                  value="HTML"
+                  required
+                />
+                <label class="form-check-label" for="html">HTML</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="subject"
+                  id="bootstrap"
+                  value="Bootstrap"
+                  required
+                />
+                <label class="form-check-label" for="bootstrap">Bootstrap</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="subject"
+                  id="jquery"
+                  value="JQuery"
+                  required
+                />
+                <label class="form-check-label" for="jquery">JQuery</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="subject"
+                  id="other2"
+                  value="Other"
+                  required
+                />
+                <label class="form-check-label" for="other2">Other</label>
+              </div>
+              <!--loader-->
+              <div id="loader1" class="spinner-border spinner-border-sm text-primary hide" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="hide form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="subject"
+                  id="php"
+                  value="PHP"
+                  required
+                />
+                <label class="form-check-label" for="php">PHP</label>
+              </div>
+              <div class="hide form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="subject"
+                  id="laravel"
+                  value="Laravel"
+                  required
+                />
+                <label class="form-check-label" for="laravel">Laravel</label>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="country" class="form-label fw-bold">Country</label>
+            <select class="form-select" id="country" required>
+              <option value="">Select a Country</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="India">India</option>
+              <option value="United States of America">United States of America</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="city" class="form-label fw-bold">City</label>
+            <!--loader-->
+            <div id="loader2" class="spinner-border spinner-border-sm text-primary hide" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <select class="form-select" id="city" required>
+              <option value="">Select City</option>
+              <!-- Cities will be dynamically loaded here -->
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success btn-add">Add</button>
+        </form>
+      </div>
+    </section>
+    
+    <section id="records">
+      <div class="container mt-5 shadow">
+        <!-- Table -->
+        <div class="mt-5">
+          <h3>Submitted Data</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Subject</th>
+                <th scope="col">City</th>
+                <th scope="col">Country</th>
+                <th scope="col">Website URL</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="dataTable">
+              <!-- Data will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

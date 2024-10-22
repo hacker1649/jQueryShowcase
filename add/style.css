@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table, tr, td {
+  width: 100px;
+}
+tr {
+  border: 1px solid black;
+}
+.functions {
+  width: 300px;
+}

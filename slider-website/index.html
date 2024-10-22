@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="./index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section id="header" class="bg-body-tertiary">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-block" href="#">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <div class="logo-img rounded-5 d-flex justify-content-center align-items-center">
+                <img src="./images/rezilla-logo.png"/>
+              </div>
+              <h5 class="fw-bold m-0 p-0">Rezilla</h5>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section id="content">
+    <div class="container rounded-1 p-4">
+      <h3 class="fw-bold">Expand your career opportunities with Python</h3>
+      <p>JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage.</p>
+      <p>The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.</p>
+      <button type="button" class="btn btn-outline-dark mb-5">Explore Python</button>
+      <div class="carousel-view d-flex flex-row justify-content-center align-items-center gap-5">
+        <div class="prev-btn"><i class="fa-solid fa-circle-arrow-left fa-2x"></i></div>
+        <div class="slider">
+          <div class="slide"><img src="./images/1.jpg" alt="image1" width="1000" height="600"></div>
+          <div class="slide"><img src="./images/2.jpg" alt="image2" width="1000" height="600"></div>
+          <div class="slide"><img src="./images/3.jpg" alt="image3" width="1000" height="600"></div>
+          <div class="slide"><img src="./images/4.jpg" alt="image4" width="1000" height="600"></div>
+          <div class="slide"><img src="./images/5.jpg" alt="image5" width="1000" height="600"></div>
+          <div class="slide"><img src="./images/6.jpg" alt="image6" width="1000" height="600"></div>
+        </div>
+        <div class="next-btn"><i class="fa-solid fa-circle-arrow-right fa-2x"></i></div>
+      </div>
+      <div class="pagination">
+        <span class="dot" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+        <span class="dot" data-slide="5"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="slide-img">
+    <div class="container rounded-1 p-4 d-flex flex-column gap-5">
+      <div class="first-row d-flex justify-content-evenly align-items-center">
+        <div class="card-1 w-100" style="width: 18rem;">
+          <img width="600" height="400" src="./images/place-1.jpg" class="card-img-1" alt="">
+          <div class="card-body-1">
+            <p class="text-justify m-0">In a city of 7.5 million people and almost as many motorbikes, walking in Hanoi can be a serious challenge. It’s no secret that I love wandering in Hanoi’s Old Quarter, one of the oldest parts of the city that’s home to much of Hanoi’s famous French colonial architecture and other heritage buildings.</p>
+          </div>
+        </div>
+        <div class="card-2 w-100" style="width: 18rem;">
+          <img width="600" height="400" src="./images/place-2.jpg" class="card-img-2" alt="">
+          <div class="card-body-2">
+            <p class="text-justify m-0">In a city of 7.5 million people and almost as many motorbikes, walking in Hanoi can be a serious challenge. It’s no secret that I love wandering in Hanoi’s Old Quarter, one of the oldest parts of the city that’s home to much of Hanoi’s famous French colonial architecture and other heritage buildings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="second-row d-flex justify-content-evenly align-items-center">
+        <div class="card-3 w-100" style="width: 18rem;">
+          <img width="600" height="400" src="./images/place-3.jpg" class="card-img-3" alt="">
+          <div class="card-body-3">
+            <p class="text-justify m-0">In a city of 7.5 million people and almost as many motorbikes, walking in Hanoi can be a serious challenge. It’s no secret that I love wandering in Hanoi’s Old Quarter, one of the oldest parts of the city that’s home to much of Hanoi’s famous French colonial architecture and other heritage buildings.</p>
+          </div>
+        </div>
+        <div class="card-4 w-100" style="width: 18rem;">
+          <img width="600" height="400" src="./images/place-4.jpg" class="card-img-4" alt="">
+          <div class="card-body-4">
+            <p class="text-justify m-0">In a city of 7.5 million people and almost as many motorbikes, walking in Hanoi can be a serious challenge. It’s no secret that I love wandering in Hanoi’s Old Quarter, one of the oldest parts of the city that’s home to much of Hanoi’s famous French colonial architecture and other heritage buildings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="third-row d-flex justify-content-evenly align-items-center">
+        <div class="card-5 w-100" style="width: 18rem;">
+          <img width="600" height="400" src="./images/place-5.jpg" class="card-img-5" alt="">
+          <div class="card-body-5">
+            <p class="text-justify m-0">In a city of 7.5 million people and almost as many motorbikes, walking in Hanoi can be a serious challenge. It’s no secret that I love wandering in Hanoi’s Old Quarter, one of the oldest parts of the city that’s home to much of Hanoi’s famous French colonial architecture and other heritage buildings.</p>
+          </div>
+        </div>
+        <div class="card-6 w-100" style="width: 18rem;">
+          <img width="600" height="400" src="./images/place-6.jpg" class="card-img-6" alt="">
+          <div class="card-body-6">
+            <p class="text-justify m-0">In a city of 7.5 million people and almost as many motorbikes, walking in Hanoi can be a serious challenge. It’s no secret that I love wandering in Hanoi’s Old Quarter, one of the oldest parts of the city that’s home to much of Hanoi’s famous French colonial architecture and other heritage buildings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="animate_horizontally">
+    <div class="container">
+      <div class="only-row d-flex justify-content-between align-items-center gap-5">
+        <div class="left-content">
+          <h3 class="fw-bold">Privacy for a better world</h3>
+          <p>At Proton, we believe that a better world begins with privacy, and our mission is at the heart of everything we do. Privacy isn’t just something we talk about; it’s a deeply held core belief and the reason Proton was created in the first place.</p>
+          <p>We believe in people before profits, and we use our resources to fight for an open internet that promotes freedom of speech and freedom of information.</p>
+          <div class="my-3 inline-block no-underline">
+            <a class="text-purple-500 flex items-center gap-1 text-lg leading-5 no-underline font-bold focus:outline-none" href="#">Learn about our impact
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="right-0 top-1/2 h-4 w-4 shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path></svg>
+            </a>
+          </div>
+        </div>
+        <div class="right-content">
+          <img width="600" height="500" src="https://images.prismic.io/proton-me/c139ba59-1c6d-4c49-9a59-1d9676d095a1_Proton+Privacy+for+a+better+world.png?auto=compress%2Cformat&amp;fit=max" alt="" class="opacity-0 transition-opacity opacity-100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="animate_vertically">
+    <div class="container">
+      <div class="only-row d-flex justify-content-between align-items-center gap-5">
+        <div class="top-content">
+          <img width="550" height="450" src="https://images.prismic.io/gatsby-landing-pages/7d60f072-5b1f-4cef-92a5-2d64bb9aab22_scientist-media-mobile.png?auto=format%2Ccompress&amp;fit=max" alt="" loading="lazy" decoding="async" class="h-auto w-full opacity-0 transition-opacity opacity-100">
+        </div>
+        <div class="bottom-content">
+          <h3 class="fw-bold">We are the scientists, engineers, and cryptographers who built Proton Mail</h3>
+          <p>The world's largest encrypted email service.</p>
+          <p>Our story begins where the web was born - at CERN, where our founding team of scientists met.</p>
+          <p>Like Proton Mail, Proton VPN is a community supported project with a simple goal: to build a safer internet that also protects civil liberties.</p>
+          <div class="my-3 inline-block no-underline">
+            <button class="btn btn-outline-primary rounded-5">Read our story</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="bg-body-tertiary">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
